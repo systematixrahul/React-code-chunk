@@ -17,7 +17,7 @@ class Axiospostexample extends React.Component {
 			gender: this.state.gender
 		};
 
-		axios.post(`https://ghibliapi.herokuapp.com/people`, gender)
+		axios.post(`https://5d6f9c56482b530014d2e551.mockapi.io/Users`, gender)
 			.then(res => {
 				console.log(res);
 				console.log(res.data);
@@ -30,10 +30,10 @@ class Axiospostexample extends React.Component {
 
 	updateData() {
 		const data = {
-			"title": "Test content",
-			"body": "Test content Test content"
+			"title": "",
+			"body": ""
 		}
-		axios.put(`https://jsonplaceholder.typicode.com/posts/1`, data)
+		axios.put(`https://5d6f9c56482b530014d2e551.mockapi.io/Users/22`, data)
 			.then(res => {
 				console.log(res);
 				console.log(res.data);
@@ -44,12 +44,12 @@ class Axiospostexample extends React.Component {
 			})
 	}
 
-	deleteData() {
+	deleteData(id) {
 		const data = {
-			"title": "Test content",
-			"body": "Test content Test content"
+			"title": "",
+			"body": ""
 		}
-		axios.delete(`https://jsonplaceholder.typicode.com/posts/1`, data)
+		axios.delete(`https://5d6f9c56482b530014d2e551.mockapi.io/Users`)
 			.then(res => {
 				console.log(res);
 				console.log(res.data);
